@@ -9,6 +9,6 @@ const router = express.Router();
 
 const upload = multer({ storage: multer.memoryStorage() });
 
-router.post("/", authMiddleware, upload.single("image"), createPostController);
+router.post("/", authMiddleware, upload.single("image"), createPostController); 
 
 export default router;
